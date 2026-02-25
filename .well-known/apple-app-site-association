@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["5F5V8HPY8S.com.mycity.family.planner"],
+        "components": [
+          {
+            "/": "/e/*"
+          }
+        ]
+      }
+    ]
+  }
+}

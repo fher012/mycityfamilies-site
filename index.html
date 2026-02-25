@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MyCityFamilies</title>
+  <script>
+    const iosStore = "https://apps.apple.com/app/6759351671";
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.href = iosStore;
+    }
+  </script>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; text-align: center; padding-top: 80px;">
+  <h2>Opening MyCityFamilies...</h2>
+  <p>If nothing happens, please download the app from the App Store.</p>
+</body>
+</html>
