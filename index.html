@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MyCityFamilies</title>
+  <meta
+    name="description"
+    content="MyCityFamilies helps families discover local events, places, and activities."
+  />
+  <meta property="og:title" content="MyCityFamilies" />
+  <meta
+    property="og:description"
+    content="Discover local events, places, and activities for families."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mycityfamilies.com/" />
+  <link rel="canonical" href="https://mycityfamilies.com/" />
+  <link rel="stylesheet" href="/styles.css" />
   <script>
     const iosStore = "https://apps.apple.com/app/6759351671";
-
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
@@ -13,8 +26,26 @@
     }
   </script>
 </head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; text-align: center; padding-top: 80px;">
-  <h2>Opening MyCityFamilies...</h2>
-  <p>If nothing happens, please download the app from the App Store.</p>
+<body>
+  <main class="page-shell">
+    <section class="hero-card hero-card--compact">
+      <p class="eyebrow">MyCityFamilies</p>
+      <h1>Opening MyCityFamilies...</h1>
+      <p class="lead">
+        If nothing happens, you can download the app from the App Store or use the support links below.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://apps.apple.com/app/6759351671">View on the App Store</a>
+        <a class="button button-secondary" href="/support/">Support</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy Policy</a>
+    </nav>
+  </footer>
 </body>
 </html>
